@@ -21,22 +21,22 @@ This project demonstrates core **Computer Networks (CN)** concepts such as TCP c
 ## 📂 Project Folder Structure
 File_Transfer_Project/
 │
-├── app.py # Flask Web Client (Frontend)
-├── server.py # TCP Server Backend
-├── client.py # Optional CLI Client
+├── app.py                 # Flask Web Client (Frontend)
+├── server.py              # TCP Server Backend
+├── client.py              # Optional CLI Client
 │
 ├── templates/
-│ ├── index.html
-│ ├── success.html
-│ └── received.html
+│   ├── index.html
+│   ├── success.html
+│   └── received.html
 │
 ├── static/
-│ ├── style.css
-│ └── script.js
+│   ├── style.css
+│   └── script.js
 │
 └── files/
-├── to_send/ # Uploaded files
-└── received/ # Server-received files
+    ├── to_send/           # Uploaded files from client
+    └── received/          # Files received by TCP server
 
 
 ---
@@ -52,11 +52,8 @@ File_Transfer_Project/
 ---
 
 ## 🛠️ How to Run the Project
-
-### 1️⃣ Install Flask
-```bash
-pip install flask
-2️⃣ Start the TCP Server (Terminal 1)
+🛠️ How to Run the Project
+1 Start the TCP Server (Terminal 1)
 python server.py
 
 
@@ -65,81 +62,80 @@ You will see:
 Server running...
 Waiting for incoming files...
 
-3️⃣ Start the Web Client (Terminal 2)
+2  Start the Web Client (Terminal 2)
 python app.py
 
 
 Open in browser:
 👉 http://127.0.0.1:5000
 
-4️⃣ Upload a File
+3  Upload a File
 
 Select any file
 
 Click Upload
 
-TCP sends the file to server
+The file is sent to the server using TCP protocol
 
 UI displays:
 
 📄 File Name
 
-📏 File Size
+📏 File Size (KB/MB)
 
-⏱ Transfer Time
+⏱ Transfer Time (seconds)
 
 5️⃣ View Received Files
 
+Open:
 👉 http://127.0.0.1:5000/received
 
-Displays files as blue clickable links.
+All received files appear as blue clickable download links.
 
-🧠 Why TCP? (CN Viva)
+🧠 Why TCP? (CN Viva Answer)
 
 TCP is used because it provides:
 
 ✔ Reliable Delivery
-
 ✔ Ordered Transmission
+✔ No Data Loss
+✔ Error-Free Communication
+✔ Flow & Congestion Control
 
-✔ No data loss
-
-✔ Error-free communication
-
-✔ Flow & congestion control
-
-UDP ❌ cannot guarantee reliability, so it is not suitable for file transfer.
+🔴 UDP cannot guarantee reliability, so it is not suitable for file transfer.
 
 🔍 How the System Works
 🟦 Client Side (Flask UI)
 
 User selects a file
 
-File is sent using TCP socket
+File is sent using a TCP socket
 
-UI shows name, size, and time
+UI shows file name, size, and transfer time
 
 🟥 Server Side (server.py)
 
 Listens for incoming connections
 
-Receives file completely
+Receives the file fully
 
-Saves in files/received/
+Saves it inside files/received/
 
 Prints file name in terminal
 
+This clearly demonstrates a Client–Server Architecture.
+
 👍 Advantages
 
-Reliable file transfer
+✅ Reliable file transfer
 
-Simple CN demonstration
+✅ Simple & clear CN concept demonstration
 
-Attractive UI
+✅ Attractive web UI
 
-OS independent
+✅ Works on any OS
 
-Easy for viva/exhibition
+✅ Ideal for viva / exhibition
 
 ⚠️ Limitations
 
@@ -147,35 +143,25 @@ Easy for viva/exhibition
 
 ❌ No authentication
 
-❌ Not for large-scale use
+❌ Not suitable for large-scale use
 
 🚀 Future Enhancements
 
 ✨ Multi-user support
-
 ✨ Multiple file upload
-
 ✨ File encryption
-
 ✨ Live progress bar
-
 ✨ Cloud integration
 
 📘 Conclusion
 
 The File Transfer Application using TCP Protocol demonstrates:
 
-Reliable TCP communication
-
-Real client–server networking
-
-Practical file transmission
-
-Flask + socket integration
-
-Live file size and transfer time tracking
-
-Perfect for CN mini-projects, viva, and exhibition (30 marks).
+✔ Reliable TCP communication
+✔ Practical Client–Server networking
+✔ Real file transfer mechanism
+✔ Flask + Python sockets integration
+✔ File size & transfer time measurement
 
 👤 Author
 
