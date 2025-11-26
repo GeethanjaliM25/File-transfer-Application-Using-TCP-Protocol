@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
+}
+
+h1, h2 {
+  color: #0077b6;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f87;
+}
+
+.link-btn {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #4CAF50;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.link-btn:hover {
+  background-color: #45a049;
+}
+
+#progress {
+  margin-top: 15px;
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 10px;
+  background: #4CAF50;
+  animation: load 3s infinite;
+}
+
+@keyframes load {
+  0% {width: 0;}
+  100% {width: 100%;}
+}

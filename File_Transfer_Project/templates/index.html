@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Transfer Application</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📁 Reliable File Transfer System</h1>
+    <p>Send your files securely using TCP</p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data" onsubmit="showProgress()">
+      <input type="file" name="file" required>
+      <button type="submit">Send File</button>
+    </form>
+
+    <div id="progress" style="display:none;">
+      <div class="progress-bar"></div>
+    </div>
+
+    <a href="/received" class="link-btn">View Received Files</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transfer Success</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>✅ File Transfer Successful!</h2>
+    <p><b>File:</b> {{ filename }}</p>
+    <p><b>Size:</b> {{ size }} KB</p>
+    <p><b>Transfer Time:</b> {{ time }} seconds</p>
+    <a href="/" class="link-btn">Send Another File</a>
+    <a href="/received" class="link-btn">View Received Files</a>
+  </div>
+</body>
+</html>
