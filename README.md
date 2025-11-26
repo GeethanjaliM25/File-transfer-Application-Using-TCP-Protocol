@@ -85,7 +85,7 @@ UI displays:
 
 ⏱ Transfer Time (seconds)
 
-5️⃣ View Received Files
+4  View Received Files
 
 Open:
 👉 http://127.0.0.1:5000/received
