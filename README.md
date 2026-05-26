@@ -2,7 +2,7 @@
 
 ## 🎯 Project Description
 A reliable and efficient **Client–Server File Transfer System** built using **Python TCP Sockets + Flask Web Interface**
-This project demonstrates core **Computer Networks (CN)** concepts such as TCP communication, reliability, flow control, and client–server architecture.
+This project demonstrates core **Computer Networks (CN)** concepts such as TCP communication, reliability, flow control, and client–server architecture..
 ---
 
 ## ⭐ Features
