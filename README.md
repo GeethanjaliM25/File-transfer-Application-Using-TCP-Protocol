@@ -1,4 +1,4 @@
-# 🌐 File Transfer Application using TCP Protocol. 
+# 🌐 File Transfer Application using TCP Protocol.  
  
 ## 🎯  Project Description
 
