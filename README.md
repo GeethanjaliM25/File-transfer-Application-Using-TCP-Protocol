@@ -3,7 +3,7 @@
 ## 🎯  Project Description 
 
 
-A reliable and efficient **Client–Server File Transfer System** built using **Python TCP Sockets + Flask Web Interface**   
+A reliable and efficient **Client–Server File Transfer System** built using **Python TCP Sockets + Flask Web Interface**    
 
 
 
